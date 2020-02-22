@@ -1,0 +1,116 @@
+<% include ../partials/header %>
+
+<link rel="stylesheet"  href="/stylesheets/usersignup.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><i class="fas fa-car-crash"></i></i> Car-Tel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> 
+      </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user"></i> Login </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Signup </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <form action="/user" method="POST" class="jumbotron container bg-dark">
+        <p>Customer Details</p>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Full Name</label>
+            <input type="text" name="user[name]" class="form-control" placeholder="eg:Jane John Doe">
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputEmail4">Contact Number</label>
+              <input type="number"  name="user[contact]" class="form-control" placeholder="eg:10 digits">
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Gender</label>
+            <input type="text" name="user[gender]" class="form-control" placeholder="eg:Jane John Doe">
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputEmail4">Age</label>
+              <input type="number"  name="user[age]" class="form-control" placeholder="eg:10 digits">
+            </div>
+        </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email"  name="user[username]" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input type="password"  name="user[password]" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text"  name="user[address]" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" name="user[city]"  class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">License no.</label>
+          <input type="text"  name="user[license]" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Pincode</label>
+          <input type="text"  name="user[pincode]" class="form-control" id="inputZip">
+        </div>
+      </div>
+      <hr><br>
+      <p>Vehicle Details</p><br>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Model Name</label>
+            <input type="text" name="user[vehicle.model]" class="form-control" placeholder="eg:Innova model z, Toyota, Black">
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputEmail4">Company</label>
+              <input type="text" name="user[vehicle.company]" class="form-control" placeholder="eg:MH04/BISH/">
+          </div>
+        </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Color</label>
+              <input type="text" name="user[vehicle.color]" class="form-control" placeholder="eg:Innova model z, Toyota, Black">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Number Plate</label>
+                <input type="text" name="user[vehicle.licenseplate]" class="form-control" placeholder="eg:MH04/BISH/">
+            </div>
+          </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            I agree to all the Terms and Conditions.
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+
+<% include ../partials/footer %>

@@ -1,0 +1,14 @@
+body{
+    background: url("https://wallpaperaccess.com/full/124068.jpg");
+    color: white;
+    background-size: cover;
+}
+.container{
+    margin-top: 25px;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+nav{
+    font-family: 'Vollkorn SC', serif;
+}

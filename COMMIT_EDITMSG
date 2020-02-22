@@ -1,0 +1,15 @@
+added signup for user
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#	modified:   app.js
+#	modified:   models/garage.js
+#	modified:   models/user.js
+#	modified:   views/user/usersignup.ejs
+#
+# Untracked files:
+#	node_modules/
+#	package-lock.json
+#	package.js

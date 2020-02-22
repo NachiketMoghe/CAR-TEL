@@ -1,0 +1,19 @@
+form {
+    background: url("https://i.pinimg.com/originals/61/bb/d8/61bbd89d5e6ca820ce713ca97d7778ac.jpg");
+    background-size: cover;
+
+}
+.container{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+nav{
+    font-family: 'Vollkorn SC', serif;
+
+}
